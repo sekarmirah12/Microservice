@@ -1,0 +1,14 @@
+C:\Users\Sekar\Documents\Visual Studio 2015\Projects\Bootcamp20.Micro\Bootcamp20.Micro.Common\bin\Debug\Bootcamp20.Micro.Common.exe.config
+C:\Users\Sekar\Documents\Visual Studio 2015\Projects\Bootcamp20.Micro\Bootcamp20.Micro.Common\bin\Debug\Bootcamp20.Micro.Common.exe
+C:\Users\Sekar\Documents\Visual Studio 2015\Projects\Bootcamp20.Micro\Bootcamp20.Micro.Common\bin\Debug\Bootcamp20.Micro.Common.pdb
+C:\Users\Sekar\Documents\Visual Studio 2015\Projects\Bootcamp20.Micro\Bootcamp20.Micro.Common\bin\Debug\Bootcamp20.Micro.Core.exe
+C:\Users\Sekar\Documents\Visual Studio 2015\Projects\Bootcamp20.Micro\Bootcamp20.Micro.Common\bin\Debug\Bootcamp20.Micro.DataAccess.exe
+C:\Users\Sekar\Documents\Visual Studio 2015\Projects\Bootcamp20.Micro\Bootcamp20.Micro.Common\bin\Debug\EntityFramework.dll
+C:\Users\Sekar\Documents\Visual Studio 2015\Projects\Bootcamp20.Micro\Bootcamp20.Micro.Common\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sekar\Documents\Visual Studio 2015\Projects\Bootcamp20.Micro\Bootcamp20.Micro.Common\bin\Debug\Bootcamp20.Micro.Core.pdb
+C:\Users\Sekar\Documents\Visual Studio 2015\Projects\Bootcamp20.Micro\Bootcamp20.Micro.Common\bin\Debug\Bootcamp20.Micro.DataAccess.pdb
+C:\Users\Sekar\Documents\Visual Studio 2015\Projects\Bootcamp20.Micro\Bootcamp20.Micro.Common\bin\Debug\EntityFramework.xml
+C:\Users\Sekar\Documents\Visual Studio 2015\Projects\Bootcamp20.Micro\Bootcamp20.Micro.Common\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sekar\Documents\Visual Studio 2015\Projects\Bootcamp20.Micro\Bootcamp20.Micro.Common\obj\Debug\Bootcamp20.Micro.Common.csprojResolveAssemblyReference.cache
+C:\Users\Sekar\Documents\Visual Studio 2015\Projects\Bootcamp20.Micro\Bootcamp20.Micro.Common\obj\Debug\Bootcamp20.Micro.Common.exe
+C:\Users\Sekar\Documents\Visual Studio 2015\Projects\Bootcamp20.Micro\Bootcamp20.Micro.Common\obj\Debug\Bootcamp20.Micro.Common.pdb

@@ -1,0 +1,85 @@
+﻿@*@model IEnumerable<Bootcamp20.Micro.DataAccess.Model.Supplier>*@
+@model IEnumerable<Bootcamp20.Micro.DataAccess.Param.SupplierParam>
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdministrator.cshtml";
+    ViewBag.Title = "Index";
+}
+<div class="col-md-12 col-10 align-self-center">
+    <button class="right-side-toggle waves-effect waves-light btn-info btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
+    <a href="Insert"> <button class="btn pull-right hidden-sm-down btn-success"><i class="mdi mdi-plus-circle"></i> Create New </button></a>
+
+</div>
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+
+        <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @*<button class="icon-pencil">@Html.ActionLink(" ", "Update", new { id = item.Id })</button>*@
+                @*@Html.ActionLink("Update", "Update", new { id = item.Id })*@
+                @*<button onclick='check(@item.Id)' class="icon-trash">@Html.ActionLink(" ", "Delete", new { id = item.Id })</button>*@
+                <a href="@Url.Action("Update", new { id = item.Id } )" class="has-arrow " aria-expanded="false" ><i class="mdi mdi-pencil"></i></a>
+                    <ul aria-expanded="false" class="collapse"></ul>
+                <a title="Delete" class="mdi mdi-delete" onclick="check(@item.Id)"></a>
+            </td>
+        </tr>
+    }
+
+</table>
+
+@section script {
+    <script src="~/Content/Adimin/assets/plugins/sweetalert/sweetalert.min.js"></script>
+    <link href="~/Content/Adimin/assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+    <script>
+        function check(Id) {
+            console.log(Id);
+            swal({
+                title: "Are you sure ?",
+                text: "You will not be able to recover this imaginary file",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Yes, delete it!",
+                closeOnConfirm: false
+            }, function () {
+                $.ajax({
+                    url: "/Suppliers/Delete/",
+                    type: "POST",
+                    data: {
+                        'id': Id
+                    },
+                    success: function (response) {
+                        swal({
+                            title: "Deleted!",
+                            text: "That data has been soft delete!",
+                            type: "success"
+                        },
+                        function () {
+                            window.location.href = "/Suppliers/Index/";
+                            //setTimeout(function(){
+                            //    location.reload();
+                            //},1200);
+                        });
+                    },
+                    error: function (response) {
+                        swal("Oops", "We couldn't connect to the server!", "error")
+                    }
+                });
+            });
+        }
+    </script>
+}
+
